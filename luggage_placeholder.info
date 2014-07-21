@@ -1,0 +1,9 @@
+name = Luggage Placeholder
+description = Adds placeholder text to fields
+core = 7.x
+package = Luggage
+version = 7.x-2.0
+project = luggage_placeholder
+features[features_api][] = api:2
+dependencies[] = field
+dependencies[] = field_ui
