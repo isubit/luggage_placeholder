@@ -4,6 +4,14 @@
  */
 
 /**
+ * Implements hook_update_projects_alter().
+ */
+function luggage_placeholder_update_projects_alter(&$projects) {
+  // Hide a site-specific module from the list.
+  unset($projects['luggage_placeholder']);
+}
+
+/**
  * Implements hook_field_form_field_ui_field_edit_form_alter()
  */
 function luggage_placeholder_form_field_ui_field_edit_form_alter(&$form, &$form_state) {
